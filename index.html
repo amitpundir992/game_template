@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Game-Website</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar">
+      <div class="left-nav">
+        <a href="#"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="right-nav">
+        <ul class="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our shop</a></li>
+          <li><a href="#">Product details</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="mobile-nav">
+        <div class="menu" id="menu-icon"><i class="fa fa-bars"></i></div>
+        <div class="menu" id="close-icon"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    </nav>
+
+    <!-- content  -->
+    <div class="main-div">
+      <div class="inside-div">
+        <div class="left-div">
+          <h6>Welcome to lugx</h6>
+          <h2>BEST GAMING SITE EVER!</h2>
+          <p>
+            LUGX Gaming is free Bootstrap 5 HTML CSS website template for your
+            gaming websites. You can download and use this layout for commercial
+            purposes. Please tell your friends about TemplateMo.
+          </p>
+
+          <form>
+            <input type="text" placeholder="Type Something" />
+            <button type="submit">Search Now</button>
+          </form>
+        </div>
+        <div class="right-div">
+          <img src="images/banner-image.jpg" alt="banner-image" />
+          <span class="price">$22</span>
+          <span class="offer">-40%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- features  -->
+    <div class="features">
+      <div class="feature">
+        <div class="item">
+          <div class="circle">
+            <img src="images/featured-01.png" alt="feature-1" />
+          </div>
+          <h4>free storage</h4>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="item">
+          <div class="circle">
+            <img src="images/featured-02.png" alt="feature-2" />
+          </div>
+          <h4>user more</h4>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="item">
+          <div class="circle">
+            <img src="images/featured-03.png" alt="feature-3" />
+          </div>
+          <h4>reply ready</h4>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="item">
+          <div class="circle">
+            <img src="images/featured-04.png" alt="feature-4" />
+          </div>
+          <h4>easy layout</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories section -->
+    <div class="categories">
+      <div class="upper-category">
+        <h6>Categories</h6>
+        <h2>top Categories</h2>
+      </div>
+      <div class="lower-category">
+        <div class="category">
+          <div class="inner-cat">
+            <h4>action</h4>
+            <img src="images/categories-01.jpg" alt="categories-01" />
+          </div>
+        </div>
+        <div class="category">
+          <div class="inner-cat">
+            <h4>action</h4>
+            <img src="images/categories-05.jpg" alt="categories-05" />
+          </div>
+        </div>
+        <div class="category">
+          <div class="inner-cat">
+            <h4>action</h4>
+            <img src="images/categories-03.jpg" alt="categories-03" />
+          </div>
+        </div>
+        <div class="category">
+          <div class="inner-cat">
+            <h4>action</h4>
+            <img src="images/categories-04.jpg" alt="categories-04" />
+          </div>
+        </div>
+        <div class="category">
+          <div class="inner-cat">
+            <h4>action</h4>
+            <img src="images/categories-05.jpg" alt="categories-05" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container  -->
+    <div class="container">
+      <div class="left-container">
+        <div class="left">
+          <h6>our shop</h6>
+          <h2>Go Pre-Order Buy &amp; Get Best <em>Prices</em> For You!</h2>
+          <p>
+            Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor
+            incididunt.
+          </p>
+          <button>shop now</button>
+        </div>
+      </div>
+      <div class="center-container">
+        <img src="images/container.jpg" alt="container" />
+      </div>
+      <div class="right-container">
+        <div class="right">
+          <h6>newsletter</h6>
+          <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+          <form>
+            <input type="text" placeholder="Your email..." />
+            <button>subscribe now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p>
+        Copyright &copy; 2024 Amit Pundir. All rights reserved | Terms and
+        Conditions
+      </p>
+    </footer>
+
+    <script>
+      const mobile_nav = document.querySelector(".mobile-nav");
+      const nav_header = document.querySelector(".navbar");
+
+      const toggleNavbar = () => {
+        nav_header.classList.toggle("active");
+      };
+
+      mobile_nav.addEventListener("click", () => toggleNavbar());
+    </script>
+  </body>
+</html>
